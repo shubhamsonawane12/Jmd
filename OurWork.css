@@ -158,9 +158,11 @@ cardContainer{
   justify-content: space-between;
   align-items: center;
   width:100%;
-  height:600px;
+  height:800px;
+  padding-bottom: 80px;
   /* border:2px solid black; */
   /* overflow: hidden; */
+  /* margin-top: -200px; */
   
   background-color: rgba(124, 163, 248, 0.6);
  /* background-color: rgba(255,246,217,0.8); */
@@ -172,10 +174,12 @@ cardContainer{
   
   width:100%;
 height:320px;
+
 display: flex;
 align-items: center;
 flex-direction: row;
 /* border:2px solid black; */
+margin-top: -25px;
 }
 .container{
   position: relative;
@@ -209,7 +213,9 @@ font-family: 'Raleway', sans-serif;
  color:rgb(47, 44, 44);
  font-size:45px;
 }
-
+.card_box_titlep{
+  font-family: mar;
+}
 
 
 .container .card{
@@ -316,8 +322,10 @@ font-family: 'Raleway', sans-serif;
 .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
-    /* color:black; */
+ font-family: 'Montserrat', sans-serif;
     /* font-weight: 900; */
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .container .card .face.face2 .content a{
@@ -876,7 +884,8 @@ font-family: 'Raleway', sans-serif;
 .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
-    /* color:black; */
+    /* font-family: 'Marcellus', serif; */
+    /* color:red !important; */
     /* font-weight: 900; */
 }
 
