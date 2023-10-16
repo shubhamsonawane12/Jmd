@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     
@@ -44,6 +44,11 @@
 />
 
 
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,57 +58,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OurWork</title>
 </head>
 
+
+
+
+
+
+<div class="desktop-View">
+  <header class="landing">
+    <nav class="menu">
+    <span class="brand">
+      <a href="#">JMD</a>
+    </span>
+    <ul class="menu-items">
+      <li class="nav-link"><a href="#">Home</a></li>
+      <li class="nav-link"><a href="#">Our Work</a></li>
+      <li class="nav-link"><a href="#">Services</a></li>
+      <li class="nav-link"><a href="#">About Us</a></li>
+      <li class="nav-link"><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
  
+</div>
 
-<!-- <header>
-    <h2 class="heading"><a style="font-size: 2rem;" href="#index.html">JMD</a></h2> -->
+<div class="Mobile-view">
 
-    <!-- <i class='bx bx-menu-alt-right' id="menu-icon"></i> -->
-    <!-- <nav class="navbar">
-        <a href="#heindex.hmtl">Home</a>
-       <a href="./OurWork.html">Our Work</a>
-        <a href="#services">Services</a>
-        <a href="#about-us">About Us</a>
-        <a href="#contact-us">Contact Us</a>
-    </nav> -->
-  <nav class="navbar">
-        <div class="brand-title">    <h2 class="heading"><a style="font-size: 2rem;" href="#index.html">JMD</a></h2></div>
-        <a href="#" class="toggle-button">
-          <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-          <!-- <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span> -->
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
+
+<nav class="navbar navbar-light bg-light" id="nav_title">
+  
+  <h2>JMD</h2>
+
+  <div class="container-fluid">
+    <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+<div class="collapse" id="navbarToggleExternalContent3">
+  <div class="bg-light shadow-3 p-4">
+    <button class="btn btn-link btn-block border-bottom m-0">Home</button>
+    <button class="btn btn-link btn-block border-bottom m-0">Our Work</button>
+    <button class="btn btn-link btn-block border-bottom m-0">Services</button>
+    <button class="btn btn-link btn-block border-bottom m-0">About Us</button>
+    <button class="btn btn-link btn-block border-bottom m-0">Contact us</button>
+  </div>
+</div>
+</div>
 
 
 
-</header> 
+
+
+
+
 
 
  
 
 
 <img_Conatiner>
-<header_title>
+<div class="header_title">
+<div  class= "Header_title_container">
  <h1>Our Work</h1>
     <p><b>Blueprints to Beauty, We Craft with Duty</b></p>
-</header_title>
+</div>
+</div>
 <div class="curosel_wrapper">
 <!-- Carousel wrapper -->
 <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel">
@@ -166,6 +193,7 @@
 
 
 </img_Conatiner>
+
 
 
    
@@ -352,7 +380,7 @@ JMD Group is committed to providing excellence in all asset categories, from des
 
 </img_Galary>
 
-<footer>
+<!-- <footer style="font-family: 'Inika', serif;">
     <div class="copyright">
         <p>&copy; 2023 JMD GROUPS.</p>
     </div> 
@@ -378,7 +406,215 @@ JMD Group is committed to providing excellence in all asset categories, from des
             <a href=""><i class='bx bxl-youtube' style='color:#ffffff'></i></a>
         </div>
     </div>
-    </footer>
+    </footer> -->
+
+
+<style>
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        border-radius: 2rem 2rem 0 0;
+        /* background: rgba(30, 30, 30, 0.92); */
+        background-color: black;
+        color: #ffffff;
+        gap: 30vw;
+        font-size: 1.7rem;
+        font-family: 'Inika', serif;
+    }
+
+    footer .copyright {
+        display: flex;
+        /* justify-content: flex-start; */
+    }
+
+    footer .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    footer .links .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2rem;
+    }
+
+    footer .links .nav-bar a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    footer .links .nav-bar a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+    }
+
+    footer .links .another-link {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2rem;
+    }
+
+    footer .links .another-link a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    footer .links .another-link a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+    }
+
+    footer .links .social-media {
+        line-height: 2rem;
+    }
+
+    footer .links .social-media h5,
+    a {
+        font-size: 1.5rem;
+    }
+
+    footer .links .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .links .social-media a {
+        display: inline-block;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+    footer .links .social-media a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+    }
+    .nav-bar a{
+      font-family: 'Inika', serif !important;
+
+    }
+    .social-media h5{
+       font-family: 'Inika', serif !important;
+       font-weight: 600;
+       color:white;
+    }
+    .so-icon a{
+      color:white !important;
+
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: translate(0);
+        }
+
+        50% {
+            transform: translate(-0.1rem, -0.25rem);
+        }
+    }
+
+    @media (max-width:1280px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            gap: 10vh;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width:786px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 1.3rem;
+        }
+
+        footer .links {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            gap: 5vh;
+        }
+
+        footer .links .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        footer .links .another-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .links .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem;
+        }
+
+        footer .links .social-media a {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+
+
+
+
+
+<footer>
+    <div class="copyright">
+        <p style="color:#FFF !important ;font-family: 'Inika', serif !important">&copy; 2023 JMD GROUPS.</p>
+    </div>
+
+    <div class="links">
+        <div class="nav-bar">
+            <a href="#hero">Home</a>
+            <a href="#our-work">Our Work</a>
+            <a href="#services">Services</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+
+        <div class="another-link">
+            <a  style="font-family: 'Inika', serif !important;" href="">Terms of Service</a>
+            <a  style="font-family: 'Inika', serif !important; " href="">Privacy Policy</a>
+        </div>
+
+        <div class="social-media">
+            <h5>Follow Us</h5>
+            <div class="so-icon">
+                <a href="" ><i style="color:#FFF !important" class='bx bxl-instagram'></i></a>
+                <a href=""><i style="color:#FFF !important" class='bx bxl-facebook'></i></a>
+                <a href=""><i  style="color:#FFF !important"class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 <!-- MDB -->
 <script
@@ -418,18 +654,7 @@ JMD Group is committed to providing excellence in all asset categories, from des
       }
     });
 
-//     let menuicon = document.getElementById("menu-icon");
-// let nav = document.querySelector('.navbar');
 
-
-// menuicon.addEventListener("click", () => {
-//     menuicon.classList.toggle('bx-x');
-//     if (nav.style.transform === "translateX(0%)") {
-//         nav.style.transform = "translateX(-100%)";
-//     } else {
-//         nav.style.transform = "translateX(0%)";
-//     }
-// });
 
 
 
@@ -441,6 +666,29 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+
+
+
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
+
+
+
+   
+
+
   </script>
 
 </html>
