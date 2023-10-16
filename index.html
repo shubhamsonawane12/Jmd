@@ -65,54 +65,175 @@
 </head>
 
 
+  <header>
+    <h2 class="heading"><a style="font-size: 2rem;" href="#home.html">JMD</a></h2>
+
+    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#our-work">Our Work</a>
+        <a href="#services">Services</a>
+        <a href="Aboutus/aboutus.html">About Us</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
+
+</header>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+   
+}
+nav.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; 
+}
+
+header .heading {
+    margin-left: 8rem;
+    color: #ffff;
+    font-size: 2.5rem;
+    font-family: 'Inika', serif;
+    
+}
+
+header .heading a {
+    text-decoration: none;
+    color: black;
+}
+
+header #menu-icon {
+    display: none;
+}
+
+header .navbar {
+    margin: 4rem;
+    transform: translateX(0%);
+}
+
+header .navbar a {
+    position: relative;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding-right: 2.2rem; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inika', serif;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 10px;
+}
+
+/* Pull down  */
+header .navbar a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: rgb(119, 119, 214);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+header .navbar a:hover:before {
+    opacity: 0.3;
+    height: 100%;
+}
+
+@media (max-width:1280px) {
+
+
+header .heading {
+    margin-left: 2rem;
+}
+
+header #menu-icon {
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    float: right;
+    padding-right: 1.2rem;
+}
+
+header .navbar {
+    position: absolute;
+    /* display: flex;
+    flex-direction: column;
+    align-items:center; */
+    /* gap: -5rem; */
+    /* justify-content: flex-start; */
+    top: 0.35rem;
+    left: -8rem;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 8rem;
+    background: rgba(197, 226, 225, 0.92);
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    z-index: 100;
+}
+
+header .navbar .active {
+    transform: translateX(0%);
+}
+
+header nav a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 5%;
+}
+
+/* Pull down  */
+header .navbar a:before {
+   display: none;
+}
+
+header .navbar a:hover:before {
+  display: none;
+}
+}
+
+@media (max-width:786px) {
 
 
 
+header nav a {
+    font-size: 1.1rem;
+    margin: 1rem 7%;
+}
+}
 
-<div class="desktop-View">
-  <header class="landing">
-    <nav class="menu">
-    <span class="brand">
-      <a href="#">JMD</a>
-    </span>
-    <ul class="menu-items">
-      <li class="nav-link"><a href="#">Home</a></li>
-      <li class="nav-link"><a href="#">Our Work</a></li>
-      <li class="nav-link"><a href="#">Services</a></li>
-      <li class="nav-link"><a href="#">About Us</a></li>
-      <li class="nav-link"><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-  </header>
- 
-</div>
+@media (max-width:380px) {
 
-<div class="Mobile-view">
-
-
-<nav class="navbar navbar-light bg-light" id="nav_title">
-  
-  <h2>JMD</h2>
-
-  <div class="container-fluid">
-    <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
-      data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
-</nav>
-<div class="collapse" id="navbarToggleExternalContent3">
-  <div class="bg-light shadow-3 p-4">
-    <button class="btn btn-link btn-block border-bottom m-0">Home</button>
-    <button class="btn btn-link btn-block border-bottom m-0">Our Work</button>
-    <button class="btn btn-link btn-block border-bottom m-0">Services</button>
-    <button class="btn btn-link btn-block border-bottom m-0">About Us</button>
-    <button class="btn btn-link btn-block border-bottom m-0">Contact us</button>
-  </div>
-</div>
-</div>
-
+header nav a {
+    margin: 1rem 20%;
+}
+}
+</style>
 
 
 
@@ -632,27 +753,27 @@ JMD Group is committed to providing excellence in all asset categories, from des
   <script>
     /*Downloaded from https://www.codeseek.co/ezra_siton/mixitup-fancybox3-JydYqm */
     // 1. querySelector
-    var containerEl = document.querySelector(".portfolio-item");
+    // var containerEl = document.querySelector(".portfolio-item");
     // 2. Passing the configuration object inline
     //https://www.kunkalabs.com/mixitup/docs/configuration-object/
-    var mixer = mixitup(containerEl, {
-      animation: {
-        effects: "fade translateZ(-100px)",
-        effectsIn: "fade translateY(-100%)",
-        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-      }
-    });
+    // var mixer = mixitup(containerEl, {
+    //   animation: {
+    //     effects: "fade translateZ(-100px)",
+    //     effectsIn: "fade translateY(-100%)",
+    //     easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+    //   }
+    // });
     // fancybox insilaze & options //
-    $("[data-fancybox]").fancybox({
-      loop: true,
-      hash: true,
-      transitionEffect: "slide",
+    // $("[data-fancybox]").fancybox({
+      // loop: true,
+      // hash: true,
+      // transitionEffect: "slide",
       /* zoom VS next////////////////////
       clickContent - i modify the deafult - now when you click on the image you go to the next image - i more like this approach than zoom on desktop (This idea was in the classic/first lightbox) */
-      clickContent: function(current, event) {
-        return current.type === "image" ? "next" : false;
-      }
-    });
+    //   clickContent: function(current, event) {
+    //     return current.type === "image" ? "next" : false;
+    //   }
+    // });
 
 
 
@@ -660,30 +781,44 @@ JMD Group is committed to providing excellence in all asset categories, from des
 
 
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// const toggleButton = document.getElementsByClassName('toggle-button')[0]
+// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+// toggleButton.addEventListener('click', () => {
+//   navbarLinks.classList.toggle('active')
+// })
 
 
 
-const navbarToggle = navbar.querySelector("#navbar-toggle");
-const navbarMenu = document.querySelector("#navbar-menu");
-const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
-let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+// const navbarToggle = navbar.querySelector("#navbar-toggle");
+// const navbarMenu = document.querySelector("#navbar-menu");
+// const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+// let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
-const toggleNavbarVisibility = () => {
-  isNavbarExpanded = !isNavbarExpanded;
-  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
-};
+// const toggleNavbarVisibility = () => {
+//   isNavbarExpanded = !isNavbarExpanded;
+//   navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+// };
 
-navbarToggle.addEventListener("click", toggleNavbarVisibility);
+// navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
-navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-navbarMenu.addEventListener("click", toggleNavbarVisibility);
+// navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+// navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
+
+
+ let menuicon = document.getElementById("menu-icon");
+let nav = document.querySelector('.navbar');
+
+
+menuicon.addEventListener("click", () => {
+    menuicon.classList.toggle('bx-x');
+    if (nav.style.transform === "translateX(0%)") {
+        nav.style.transform = "translateX(-100%)";
+    } else {
+        nav.style.transform = "translateX(0%)";
+    }
+});
 
 
    
