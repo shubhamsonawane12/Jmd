@@ -1412,6 +1412,7 @@ padding-bottom: -20rem;
    font-size:50px;
     font-family: 'Kaushan Script';
     color:#24211d;
+    
     font-weight:600 !important;
 
 }
@@ -1797,7 +1798,22 @@ button#buttons3 {
 
 @media only screen and (min-width: 784px) and (max-width: 1013px) {
 
+.header_title {
+  position: absolute;
 
+  left: 50%; /* Position horizontally in the center */
+  /* transform: translateX(-50%);  */
+  /* z-index: 3;  */
+    /* border:5px solid rgb(180, 7, 7); */
+    padding-top: 10px;
+    height:100%;
+margin-left:-10rem;
+/* margin-top: 13rem; */
+padding-bottom: -20rem;
+
+
+ 
+}
 cardContainer{
 
   display: flex;
@@ -2057,6 +2073,7 @@ img_Galary{
 #title-Text h2{
 font-family: 'Raleway', sans-serif;
 font-weight: 600 !important;
+
 font-size:30px !important;
 margin-right:24rem;
 }
